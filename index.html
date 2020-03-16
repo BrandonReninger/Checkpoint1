@@ -16,68 +16,102 @@
 </head>
 
 <body>
-
     <header class="bg-image">
 
+        <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <nav class="nav nav-pills flex-column fixed-top flex-sm-row">
-            <a class="flex-sm-fill text-sm-center nav-link active" href="#">Active</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
-            <a class="flex-sm-fill text-sm-center nav-link disabled" href="#" tabindex="-1"
-                aria-disabled="true">Disabled</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
         </nav>
 
-        <div class="row">
-            <div class="col-6 d-flex flex-column mt">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat nulla sit adipisci deleniti dolorum
-                    odit magnam ad optio laborum cumque sequi magni tempora, excepturi corporis hic modi. Blanditiis,
-                    ratione itaque?</p>
-                <button type="button" class="btn btn-primary btn-lg btn-block mt-3">Block level button</button>
-            </div>
-
-            <div class="col-6 d-flex mt">
-                <iframe width="500" height="350" src="https://www.youtube.com/embed/u21W_tfPVrY" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-xs-1 order-lg-1 order-2 d-flex align-items-center text-center">
+                    <p class="w-75">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat nulla sit
+                        adipisci deleniti
+                        dolorum
+                        odit magnam ad optio laborum cumque sequi magni tempora, excepturi corporis hic modi.
+                        Blanditiis,
+                        ratione itaque?
+                        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-xs-1 order-lg-2 order-1 text-center">
+                    <iframe class="embed-responsive" width="500" height="350"
+                        src="https://www.youtube.com/embed/u21W_tfPVrY" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </header>
 
-    <section class="container-fluid">
-
-        <div class="row d-flex flex-nowrap bg-image2">
-            <div class="col mt-3">
-                <img src="https://picsum.photos/id/1015/367/267" class="rounded-circle" alt="fjord">
-                <div class="card w-33">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Button</a>
-                    </div>
+    <div class="row bg-image2">
+        <div class="card-deck text-center w-100">
+            <div class="card">
+                <img src="https://picsum.photos/id/1015/367/267" class="rounded-circle m-auto" alt="fjord">
+                <div class="card-body">
+                    <h5 class="card-title">Lorem</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, beatae hic
+                        eum nemo necessitatibus tempore a veniam dolorum, quod eaque numquam. Modi, nostrum
+                        pariatur? Voluptatum neque impedit cupiditate eaque voluptas!</p>
+                    <button type="button" class="btn btn-primary btn-sm">Small button</button>
                 </div>
             </div>
-            <div class="col mt-3">
-                <img src="https://picsum.photos/id/10/367/267" class="rounded-circle" alt="forest">
-                <div class="card w-33">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Button</a>
-                    </div>
+            <div class="card">
+                <img src="https://picsum.photos/id/10/367/267" class="rounded-circle m-auto" alt="forest">
+                <div class="card-body">
+                    <h5 class="card-title">Lorem</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquam, rem
+                        esse expedita officiis quam sunt eveniet enim doloremque. Dolores harum eius sed rerum
+                        veritatis perspiciatis inventore minus excepturi. Impedit!</p>
+                    <button type="button" class="btn btn-primary btn-sm">Small button</button>
                 </div>
             </div>
-            <div class="col mt-3">
-                <img src="https://picsum.photos/id/1022/367/267" class="rounded-circle" alt="aurora">
-                <div class="card w-33">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Button</a>
-                    </div>
+            <div class="card">
+                <img src="https://picsum.photos/id/1022/367/267" class="rounded-circle m-auto" alt="aurora">
+                <div class="card-body">
+                    <h5 class="card-title">Lorem</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, rem modi?
+                        Quam repellat, repellendus laudantium officia, amet dolorem mollitia at deserunt reiciendis
+                        eum eveniet? Autem provident tempora temporibus dolor officia?</p>
+                    <button type="button" class="btn btn-primary btn-sm">Small button</button>
                 </div>
             </div>
-    </section>
+        </div>
+    </div>
 
     <div class="row">
         <div class="col-12 line">
@@ -86,31 +120,32 @@
 
     <section class="container-fluid">
 
-        <div class="row">
-            <div class="col-6 d-flex justify-content-center m-auto">
-                <img src="https://via.placeholder.com/250">
+        <div class="row flex-nowrap">
+            <div class="d-flex justify-content-center col-lg-6 col-xs-1 order-xs-1 pt-2 pb-2">
+                <img class="img-fluid" src="https://picsum.photos/id/1039/367/267">
             </div>
-            <div class="col-6 d-flex flex-column justify-content-center m-auto">
-                <p class="text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fugiat tempore
-                    impedit corporis
-                    nemo excepturi harum molestias vitae, laborum cum, soluta deleniti repudiandae, id sint maxime.
-                    Tempora totam voluptate voluptatem.</p>
-                <p class="text-wrap">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi suscipit culpa
-                    optio nisi voluptates
-                    debitis, nesciunt a nostrum ipsum, nemo soluta tempora repudiandae quia maiores, aut iste. Unde,
-                    odit ut!</p>
+            <div class="col-lg-6 col-xs-1 order-xs-1 text-center w-100">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse sed quod iusto provident
+                    dicta alias saepe
+                    fuga animi quae illo eligendi sunt, adipisci possimus ex ipsum autem, maxime fugiat unde! Lorem
+                    ipsum
+                    dolor sit amet consectetur adipisicing elit. Corrupti, inventore quo alias voluptatum, cum soluta
+                    explicabo quam consequuntur, exercitationem esse nisi beatae odio quia quod quis voluptatibus
+                    tempore
+                    est enim.
+                </p>
             </div>
         </div>
 
         <div class="row bg-primary d-flex justify-content-center">
             <div class="col-3">
-                <img src="https://logoeps.com/wp-content/uploads/2014/02/25231-github-cat-in-a-circle-icon-vector-icon-vector-eps.png"
+                <img class="img-fluid"
+                    src="https://logoeps.com/wp-content/uploads/2014/02/25231-github-cat-in-a-circle-icon-vector-icon-vector-eps.png"
                     alt="github">
             </div>
         </div>
 
     </section>
-
     <footer class="row d-flex justify-content-between bg-danger">
         <div class="col-2 d-flex justify-content-end">
             <i class="fab fa-facebook align-self-center"></i>
