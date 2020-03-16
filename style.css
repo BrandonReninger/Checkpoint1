@@ -28,6 +28,10 @@ img {
 
 
 .line {
-    border-bottom: 2rem;
+    border-bottom: 1rem;
     border-bottom-style: solid;
+}
+
+card deck {
+    margin-bottom: -1rem;
 }
